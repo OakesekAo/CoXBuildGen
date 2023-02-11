@@ -2,7 +2,7 @@
 <html lang="en" class="h-100">
 
 <head>
-    <title>App Name: A Coding Project by Andrew Oakes</title>
+    <title>City of Heroes and Villains Build Generator</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -22,7 +22,7 @@
     <!-- ==== Nav Section === -->
     <nav class="navbar navbar-expand-md navbar-dark fixed-top">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="img/TreeLogo.png" class="d-inline-block align-text-center" width="30" height="24"> App Name</a>
+            <a class="navbar-brand" href="#"><img src="img/TreeLogo.png" class="d-inline-block align-text-center" width="30" height="24"> Supe Gen</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
                 aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -33,16 +33,8 @@
                         <a class="nav-link" aria-current="page" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">The App</a>
+                        <a class="nav-link active" aria-current="page" href="#">Supe Gen</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="code.html">The Code</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" target="_blank" href="#">Git Repo</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" target="_blank" href="#">About</a>
                     </li>
                 </ul>
             </div>
@@ -51,7 +43,28 @@
     <!-- ==== Main Section === -->
     <main class="flex-shrink-0">
         <div class="container">
+            <div class="row row-cols-1 row-cols-lg-2">
+                
+                <div class="col flex-column py-4">
 
+
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-header">New Supe </h5>
+                            <p class="card-body" id="output">
+                                <b>Archetype:</b> AT<br>
+                                <b>Primary Power:</b> prim<br>
+                                <b>Secondary Power:</b> sec<br>
+                                <b>Epic Power:</b> epic
+                            </p>
+                            <button" class="btn btn-primary" id="generate-button">Generate Super Powers</button>
+                        </div>
+                    </div>
+
+                    <div class="card" id="output"></div>
+                    
+                </div>
+            </div> 
         </div>
     </main>
     <!-- ==== Footer Section === -->
@@ -59,16 +72,13 @@
         <div class="container-fluid">
             <div class="row row-cols-1 row-cols-lg-3 gy-2">
                 <div class="col d-flex align-items-center order-last order-lg-first text-light">
-                    <div><span class="text-muted">&copy;2022</span> Andrew Oakes | oakes.a@live.com</div>
+                    <div><span class="text-muted">&copy;2023</span> New Supe Gen</div>
                 </div>
                 <div class="col d-flex align-items-center justify-content-start justify-content-lg-center">
-                    <img src="img/AndrewLight.png" alt="Andrew Oakes Logo" height="24">
+                    <img src="img/SupeGenLogo.png" alt="Andrew Oakes Logo" height="24">
                 </div>
                 <div class="col d-flex align-items-center justify-content-start justify-content-lg-end">
                     <div class="row">
-                        <div class="col social" target="_blank"><a href="#"><i class="fab fa-linkedin fa-2x"></i></a></div>
-                        <div class="col social" target="_blank"><a href="#"><i class="fab fa-github fa-2x"></i></a></div>
-                        <div class="col social" target="_blank"><a href="#"><i class="fab fa-twitter fa-2x"></i></a></div>
                     </div>
                 </div>           
             </div>
