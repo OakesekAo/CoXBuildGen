@@ -163,6 +163,7 @@ class Superhero {
     ILLUSION_CONTROL: "Illusion Control",
     MIND_CONTROL: "Mind Control",
     PLANT_CONTROL: "Plant Control",
+    SYMPHONY_CONTROL: "Symphony Control"
     };  
     const ControllerSecondaryPowers = {
     COLD_DOMINATION: "Cold Domination",
@@ -296,8 +297,10 @@ class Superhero {
     FIRE_CONTROL: "Fire Control",
     GRAVITY_CONTROL: "Gravity Control",
     ICE_CONTROL: "Ice Control",
+    ILLUSION_CONTROL: "Illusion Control",
     MIND_CONTROL: "Mind Control",
-    PLANT_CONTROL: "Plant Control"
+    PLANT_CONTROL: "Plant Control",
+    SYMPHONY_CONTROL: "Symphony Control"
     };      
     const DominatorSecondaryPowers = {
     DARK_ASSAULT: "Dark Assault",
@@ -310,6 +313,7 @@ class Superhero {
     PSIONIC_ASSAULT: "Psionic Assault",
     RADIOACTIVE_ASSAULT: "Radioactive Assault",
     SAVAGE_ASSAULT: "Savage Assault",
+    SONIC_ASSAULT: "Sonic Assault",
     THORNY_ASSAULT: "Thorny Assault"
     };      
     const DominatorEpicPowers = {
@@ -440,6 +444,7 @@ class Superhero {
     ICE_BLAST: "Ice Blast",
     PSYCHIC_BLAST: "Psychic Blast",
     RADIATION_BLAST: "Radiation Blast",
+    SEISMIC_BLAST: "Seismic Blast",
     SONIC_BLAST: "Sonic Blast",
     WATER_BLAST: "Water Blast"
     };        
@@ -455,6 +460,7 @@ class Superhero {
     RADIATION_ARMOR: "Radiation Armor",
     REGENERATION: "Regeneration",
     SUPER_REFLEXES: "Super Reflexes",
+    STONE_ARMOR: "Stone Armor",
     WILLPOWER: "Willpower"
     };        
     const SentinelEpicPowers = {
