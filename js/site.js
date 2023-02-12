@@ -27,31 +27,31 @@ class Superhero {
     };
   
   //Soldier Powers
-    const ArachnosSoldierPrimaryPower = {
+    const ArachnosSoldierPrimaryPowers = {
     ARACHNOS_SOLDIER2: "Arachnos Soldier",
     BANE_SPIDER_SOLDIER: "Bane Spider Soldier",
     CRAB_SPIDER_SOLDIER: "Crab Spider Soldier"
     };  
-    const ArachnosSoldierSecondaryPower = {
+    const ArachnosSoldierSecondaryPowers = {
     TRAINING: "Training",
     TRAINING2: "Training"
     };  
-    const ArachnosSoldierEpicPower = {
+    const ArachnosSoldierEpicPowers = {
     NONE: "None",
     NONE2: "None"
     };
   
   //Widow Powers
-    const ArachnosWidowPrimaryPower = {
+    const ArachnosWidowPrimaryPowers = {
     FORTUNATA_TRAINING: "Fortunata Training",
     NIGHT_WIDOW_TRAINING: "Night Widow Training",
     WIDOW_TRAINING: "Widow Training"
     };  
-    const ArachnosWidowSecondaryPower = {
+    const ArachnosWidowSecondaryPowers = {
     TRAINING: "Teamwork",
     TRAINING2: "Teamwork"
     };  
-    const ArachnosWidowEpicPower = {
+    const ArachnosWidowEpicPowers = {
     NONE: "None",
     NONE2: "None"
     };
@@ -368,15 +368,15 @@ class Superhero {
     };
 
     //Peacebringer Powers
-    const PeacebringerPrimaryPower = {
+    const PeacebringerPrimaryPowers = {
     LUMINOUS_BLAST: "Luminous Blast",
     LUMINOUS_BLAST2: "Luminous Blast",
     };  
-    const PeacebringerSecondaryPower = {
+    const PeacebringerSecondaryPowers = {
     LUMINOUS_AURA: "Luminous Aura",
     LUMINOUS_AURA2: "Luminous Aura"
     };  
-    const PeacebringerEpicPower = {
+    const PeacebringerEpicPowers = {
     NONE: "None",
     NONE2: "None"
     };
@@ -477,7 +477,7 @@ class Superhero {
     };
 
     // Stalker Powers
-const StalkerPrimaryPower = {
+const StalkerPrimaryPowers = {
     BROAD_SWORD: "Broad Sword",
     CLAWS: "Claws",
     DARK_MELEE: "Dark Melee",
@@ -497,7 +497,7 @@ const StalkerPrimaryPower = {
     STONE_MELEE: "Stone Melee",
     STREET_JUSTICE: "Street Justice",
     };    
-    const StalkerSecondaryPower = {
+    const StalkerSecondaryPowers = {
     BIO_ARMOR: "Bio Armor",
     DARK_ARMOR: "Dark Armor",
     ELECTRIC_ARMOR: "Electric Armor",
@@ -513,7 +513,7 @@ const StalkerPrimaryPower = {
     SUPER_REFLEXES: "Super Reflexes",
     WILLPOWER: "Willpower",
     };    
-    const StalkerEpicPower = {
+    const StalkerEpicPowers = {
     BLAZE_MASTERY: "Blaze Mastery",
     BODY_MASTERY: "Body Mastery",
     DARKNESS_MASTERY: "Darkness Mastery",
@@ -525,7 +525,7 @@ const StalkerPrimaryPower = {
     };
 
     // Tanker Powers
-    const TankerPrimaryPower = {
+    const TankerPrimaryPowers = {
     BIO_ARMOR: "Bio Armor",
     DARK_ARMOR: "Dark Armor",
     ELECTRIC_ARMOR: "Electric Armor",
@@ -538,7 +538,7 @@ const StalkerPrimaryPower = {
     SUPER_REFLEXES: "Super Reflexes",
     WILLPOWER: "Willpower"
     };    
-    const TankerSecondaryPower = {
+    const TankerSecondaryPowers = {
     BATTLE_AXE: "Battle Axe",
     BROAD_SWORD: "Broad Sword",
     CLAWS: "Claws",
@@ -562,7 +562,7 @@ const StalkerPrimaryPower = {
     TITAN_WEAPONS: "Titan Weapons",
     WAR_MACE: "War Mace"
     };    
-    const TankerEpicPower = {
+    const TankerEpicPowers = {
     ARCTIC_MASTERY: "Arctic Mastery",
     EARTH_MASTERY: "Earth Mastery",
     ENERGY_MASTERY: "Energy Mastery",
@@ -574,22 +574,51 @@ const StalkerPrimaryPower = {
     };
 
     //Warshade Powers
-    const WarshadePrimaryPower = {
+    const WarshadePrimaryPowers = {
     UMBRAL_BLAST: "Umbral Blast",
     UMBRAL_BLAST2: "Umbral Blast",
     };  
-    const WarshadeSecondaryPower = {
+    const WarshadeSecondaryPowers = {
     UMBRAL_AURA: "Umbral Aura",
     UMBRAL_AURA2: "Umbral Aura"
     };  
-    const WarshadeEpicPower = {
+    const WarshadeEpicPowers = {
     NONE: "None",
     NONE2: "None"
     };
   
+    function getRandomSuperheroNew() {
+      const archetype = Object.values(Archetype)[    Math.floor(Math.random() * Object.values(Archetype).length)  ];
+    
+      const powerTypes = {
+        [Archetype.ARACHNOS_SOLDIER]: [ArachnosSoldierPrimaryPowers, ArachnosSoldierSecondaryPowers, ArachnosSoldierEpicPowers],
+        [Archetype.ARACHNOS_WIDOW]: [ArachnosWidowPrimaryPowers, ArachnosWidowSecondaryPowers, ArachnosWidowEpicPowers],
+        [Archetype.BLASTER]: [BlasterPrimaryPowers, BlasterSecondaryPowers, BlasterEpicPowers],
+        [Archetype.BRUTE]: [BrutePrimaryPowers, BruteSecondaryPowers, BruteEpicPowers],
+        [Archetype.CONTROLLER]: [ControllerPrimaryPowers, ControllerSecondaryPowers, ControllerEpicPowers],
+        [Archetype.CORRUPTOR]: [CorruptorPrimaryPowers, CorruptorSecondaryPowers, CorruptorEpicPowers],
+        [Archetype.DEFENDER]: [DefenderPrimaryPowers, DefenderSecondaryPowers, DefenderEpicPowers],
+        [Archetype.DOMINATOR]: [DominatorPrimaryPowers, DominatorSecondaryPowers, DominatorEpicPowers],
+        [Archetype.MASTERMIND]: [MastermindPrimaryPowers, MastermindSecondaryPowers, MastermindEpicPowers],
+        [Archetype.PEACEBRINGER]: [PeacebringerPrimaryPowers, PeacebringerSecondaryPowers, PeacebringerEpicPowers],
+        [Archetype.SCRAPPER]: [ScrapperPrimaryPowers, ScrapperSecondaryPowers, ScrapperEpicPowers],
+        [Archetype.SENTINEL]: [SentinelPrimaryPowers, SentinelSecondaryPowers, SentinelEpicPowers],
+        [Archetype.STALKER]: [StalkerPrimaryPowers, StalkerSecondaryPowers, StalkerEpicPowers],
+        [Archetype.TANKER]: [TankerPrimaryPowers, TankerSecondaryPowers, TankerEpicPowers],
+        [Archetype.WARSHADE]: [WarshadePrimaryPowers, WarshadeSecondaryPowers, WarshadeEpicPowers],
+      };
+      
+    
+      const [primaryPower, secondaryPower, epicPower] = powerTypes[archetype].map(powers => {
+        return Object.values(powers)[Math.floor(Math.random() * Object.values(powers).length)];
+      });
+      
+    
+      return { archetype, primaryPower, secondaryPower, epicPower };
+    }
+    
 
-
-function getRandomSuperhero() {
+function getRandomSuperhero2() {
   let archetype = Object.values(Archetype)[
     Math.floor(Math.random() * Object.values(Archetype).length)
   ];
@@ -674,17 +703,59 @@ function getRandomSuperhero() {
   
     return new Superhero(archetype, primaryPower, secondaryPower, epicPower);
   }
-  
-const button = document.querySelector("#generate-button");
-const output = document.querySelector("#output");
 
-button.addEventListener("click", function() {
-  const hero = getRandomSuperhero();
-  output.innerHTML = `Archetype: <b>${hero.archetype}</b><br>
-                      Primary Power: <b>${hero.primaryPower}</b><br>
-                      Secondary Power:<b> ${hero.secondaryPower}</b><br>
-                      Epic Power: <b>${hero.epicPower}</b>`;
-});
+    function getRandomSuperhero(filterArchetype) {
+      console.log(filterArchetype);
+      let archetype;
+
+      
+      const powerTypes = {
+        [Archetype.ARACHNOS_SOLDIER]: [ArachnosSoldierPrimaryPowers, ArachnosSoldierSecondaryPowers, ArachnosSoldierEpicPowers],
+        [Archetype.ARACHNOS_WIDOW]: [ArachnosWidowPrimaryPowers, ArachnosWidowSecondaryPowers, ArachnosWidowEpicPowers],
+        [Archetype.BLASTER]: [BlasterPrimaryPowers, BlasterSecondaryPowers, BlasterEpicPowers],
+        [Archetype.BRUTE]: [BrutePrimaryPowers, BruteSecondaryPowers, BruteEpicPowers],
+        [Archetype.CONTROLLER]: [ControllerPrimaryPowers, ControllerSecondaryPowers, ControllerEpicPowers],
+        [Archetype.CORRUPTOR]: [CorruptorPrimaryPowers, CorruptorSecondaryPowers, CorruptorEpicPowers],
+        [Archetype.DEFENDER]: [DefenderPrimaryPowers, DefenderSecondaryPowers, DefenderEpicPowers],
+        [Archetype.DOMINATOR]: [DominatorPrimaryPowers, DominatorSecondaryPowers, DominatorEpicPowers],
+        [Archetype.MASTERMIND]: [MastermindPrimaryPowers, MastermindSecondaryPowers, MastermindEpicPowers],
+        [Archetype.PEACEBRINGER]: [PeacebringerPrimaryPowers, PeacebringerSecondaryPowers, PeacebringerEpicPowers],
+        [Archetype.SCRAPPER]: [ScrapperPrimaryPowers, ScrapperSecondaryPowers, ScrapperEpicPowers],
+        [Archetype.SENTINEL]: [SentinelPrimaryPowers, SentinelSecondaryPowers, SentinelEpicPowers],
+        [Archetype.STALKER]: [StalkerPrimaryPowers, StalkerSecondaryPowers, StalkerEpicPowers],
+        [Archetype.TANKER]: [TankerPrimaryPowers, TankerSecondaryPowers, TankerEpicPowers],
+        [Archetype.WARSHADE]: [WarshadePrimaryPowers, WarshadeSecondaryPowers, WarshadeEpicPowers]
+      };
+      
+       if (filterArchetype != "all") {
+        archetype =  Archetype[filterArchetype];      
+      console.log(archetype);
+      } else {
+        archetype = Object.values(Archetype)[Math.floor(Math.random() * Object.values(Archetype).length)];
+        console.log(archetype);
+      }
+
+      const [primaryPower, secondaryPower, epicPower] = powerTypes[archetype].map(powers => {
+        return Object.values(powers)[Math.floor(Math.random() * Object.values(powers).length)];
+      });
+      
+      return { archetype, primaryPower, secondaryPower, epicPower };
+    }
+    
+
+
+    const button = document.getElementById("generate-button");
+    const output = document.querySelector("#output");
+    
+    button.addEventListener("click", function() {
+      const selectedArchetype = archetypeSelect.value || "All";
+      const hero = getRandomSuperhero(selectedArchetype === "All" ? null : selectedArchetype);
+    
+      output.innerHTML = `Archetype: <b>${hero.archetype}</b><br>
+                          Primary Power: <b>${hero.primaryPower}</b><br>
+                          Secondary Power:<b> ${hero.secondaryPower}</b><br>
+                          Epic Power: <b>${hero.epicPower}</b>`;
+    });
 
 
 

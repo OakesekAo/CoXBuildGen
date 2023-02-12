@@ -57,7 +57,31 @@
                                 <b>Secondary Power:</b> sec<br>
                                 <b>Epic Power:</b> epic
                             </p>
-                            <button" class="btn btn-primary" id="generate-button">Generate Super Powers</button>
+                            <div class="form-group">
+                                <label for="archetypeSelect">Select an archetype:</label>
+                                <select class="form-select form-select-lg mb-3" onfocus='this.size=3;' onblur='this.size=1;' onchange='this.size=1; this.blur();' id="archetypeSelect">
+                                    <option value="all">All</option>
+                                    <option value="ARACHNOS_SOLDIER">Arachnos Soldier</option>
+                                    <option value="ARACHNOS_WIDOW">Arachnos Widow</option>
+                                    <option value="BLASTER">Blaster</option>
+                                    <option value="BRUTE">Brute</option>
+                                    <option value="CONTROLLER">Controller</option>
+                                    <option value="CORRUPTOR">Corruptor</option>
+                                    <option value="DEFENDER">Defender</option>
+                                    <option value="DOMINATOR">Dominator</option>
+                                    <option value="MASTERMIND">Mastermind</option>
+                                    <option value="PEACEBRINGER">Peacebringer</option>
+                                    <option value="SCRAPPER">Scrapper</option>
+                                    <option value="SENTINEL">Sentinel</option>
+                                    <option value="STALKER">Stalker</option>
+                                    <option value="TANKER">Tanker</option>
+                                    <option value="WARSHADE">Warshade</option>
+                                    <!-- Add options for the rest of the archetypes -->
+                                </select>
+                            </div>
+                            <button class="btn btn-primary mt-3" id="generate-button">Generate Super Powers</button>
+
+                            
                         </div>
                     </div>
 
