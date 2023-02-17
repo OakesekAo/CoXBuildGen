@@ -51,6 +51,15 @@
                     <div class="card">
                         <div class="card-body">
                             <h5 class="card-header">New Supe </h5>
+                            <div class="form-group py-1">
+                                <label for="enumSelect">Select a Server:</label>
+                                <select class="form-select form-select-lg mb-3" onfocus='this.size=4;' onblur='this.size=1;' onchange='this.size=1; this.blur();' id="enumSelect">
+                                    <option value="server">Select Server</option>
+                                  <option value="enumsHC">Homecoming</option>
+                                  <option value="enumsRB">ReBirth</option>
+                                  <option value="enumsTS">Thunderspy</option>
+                                </select>
+                              </div>
                             <p class="card-body" id="output">
                                 <b>Archetype:</b> AT<br>
                                 <b>Primary Power:</b> prim<br>
@@ -60,8 +69,8 @@
                             <div class="form-group">
                                 <label for="archetypeSelect">Select an archetype:</label>
                                 <select class="form-select form-select-lg mb-3" onfocus='this.size=3;' onblur='this.size=1;' onchange='this.size=1; this.blur();' id="archetypeSelect">
-                                    <option value="all">All</option>
-                                    <option value="ARACHNOS_SOLDIER">Arachnos Soldier</option>
+                                    <option value="all"></option>
+                                     <!--                                    <option value="ARACHNOS_SOLDIER">Arachnos Soldier</option>
                                     <option value="ARACHNOS_WIDOW">Arachnos Widow</option>
                                     <option value="BLASTER">Blaster</option>
                                     <option value="BRUTE">Brute</option>
@@ -75,7 +84,7 @@
                                     <option value="SENTINEL">Sentinel</option>
                                     <option value="STALKER">Stalker</option>
                                     <option value="TANKER">Tanker</option>
-                                    <option value="WARSHADE">Warshade</option>
+                                    <option value="WARSHADE">Warshade</option> -->
                                     <!-- Add options for the rest of the archetypes -->
                                 </select>
                             </div>
@@ -85,7 +94,6 @@
                         </div>
                     </div>
 
-                    <div class="card" id="output"></div>
                     
                 </div>
             </div> 
@@ -112,7 +120,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
     </script>
-    <script src="js/site.js"></script>
+    <script type="module" src="js/site.js"></script>
 </body>
 
 </html>
