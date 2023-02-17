@@ -9,8 +9,8 @@ const Archetype = {
   DOMINATOR: "Dominator",
   MASTERMIND: "Mastermind",
   PEACEBRINGER: "Peacebringer",
+  SENTINEL: "Primalist",
   SCRAPPER: "Scrapper",
-  SENTINEL: "Sentinel",
   STALKER: "Stalker",
   TANKER: "Tanker",
   WARSHADE: "Warshade"

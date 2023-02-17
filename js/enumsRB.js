@@ -7,6 +7,7 @@ const Archetype = {
   CORRUPTOR: "Corruptor",
   DEFENDER: "Defender",
   DOMINATOR: "Dominator",
+  GUARDIAN: "Guardian",
   MASTERMIND: "Mastermind",
   PEACEBRINGER: "Peacebringer",
   SCRAPPER: "Scrapper",
@@ -317,6 +318,57 @@ const Archetype = {
   SOUL_MASTERY: "Soul Mastery"
   };
 
+      //Guardian Powers
+      const GuardianPrimaryPowers = {
+        DARK_ASSAULT: "Dark Assault",
+        EARTH_ASSAULT: "Earth Assault",
+        ELECTRICITY_ASSAULT: "Electricity Assault",
+        ENERGY_ASSAULT: "Energy Assault",
+        FIERY_ASSAULT: "Fiery Assault",
+        GUN_FU: "Gun Fu",
+        HELLFIRE_ASSAULT: "Hellfire Assault",
+        ICY_ASSAULT: "Icy Assault",
+        KINETIC_ASSAULT: "Kinetic Assault",
+        LUMINOUS_ASSAULT: "Luminous Assault",
+        MACE_ASSAULT: "Mace Assault",
+        MARTIAL_ASSAULT: "Martial Assault",
+        MILITARY_ASSAULT: "Military Assault",
+        NINJA_ASSAULT: "Ninja Assault",
+        PSIONIC_ASSAULT: "Psionic Assault",
+        THORNY_ASSAULT: "Thorny Assault"
+      };
+            
+      const GuardianSecondaryPowers = {
+        ATMOSPHERIC_COMPOSITION: "Atmospheric Composition",
+        DARK_COMPOSITION: "Dark Composition",
+        ENERGY_COMPOSITION: "Energy Composition",
+        FIERY_COMPOSITION: "Fiery Composition",
+        ICE_COMPOSITION: "Ice Composition",
+        INFILTRATOR_TRAINING: "Infiltrator Training",
+        ORGANIC_COMPOSITION: "Organic Composition",
+        PAIN_FOCUSING: "Pain Focusing",
+        RADIATION_COMPOSITION: "Radiation Composition",
+        RECONSTRUCTIVE_HEALING: "Reconstructive Healing",
+        STONE_COMPOSITION: "Stone Composition",
+        TEMPORAL_REACTION: "Temporal Reaction",
+      };
+             
+      const GuardianEpicPowers = {
+        FIRE_MASTERY: "Fire Mastery",
+        ICE_MASTERY: "Ice Mastery",
+        PRIMAL_FORCES_MASTERY: "Primal Forces Mastery",
+        PSIONIC_MASTERY: "Psionic Mastery",
+        LEVIATHAN_MASTERY: "Leviathan Mastery",
+        MACE_MASTERY: "Mace Mastery",
+        MU_MASTERY: "Mu Mastery",
+        SOUL_MASTERY: "Soul Mastery",
+      };
+      
+
+
+//Guardian Powers
+
+
     //Mastermind Powers
   const MastermindPrimaryPowers = {
   BEAST_MASTERY: "Beast Mastery",
@@ -586,6 +638,7 @@ const StalkerPrimaryPowers = {
     [Archetype.CORRUPTOR]: [CorruptorPrimaryPowers, CorruptorSecondaryPowers, CorruptorEpicPowers],
     [Archetype.DEFENDER]: [DefenderPrimaryPowers, DefenderSecondaryPowers, DefenderEpicPowers],
     [Archetype.DOMINATOR]: [DominatorPrimaryPowers, DominatorSecondaryPowers, DominatorEpicPowers],
+    [Archetype.GUARDIAN]: [GuardianPrimaryPowers, GuardianSecondaryPowers, GuardianEpicPowers],
     [Archetype.MASTERMIND]: [MastermindPrimaryPowers, MastermindSecondaryPowers, MastermindEpicPowers],
     [Archetype.PEACEBRINGER]: [PeacebringerPrimaryPowers, PeacebringerSecondaryPowers, PeacebringerEpicPowers],
     [Archetype.SCRAPPER]: [ScrapperPrimaryPowers, ScrapperSecondaryPowers, ScrapperEpicPowers],
