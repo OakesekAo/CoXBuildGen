@@ -411,8 +411,9 @@ const Archetype = {
 
   //Peacebringer Powers
   const PeacebringerPrimaryPowers = {
-  LUMINOUS_BLAST: "Luminous Blast",
-  LUMINOUS_BLAST2: "Luminous Blast",
+    LUMINOUS_BLAST: "Bright Nova",
+    LUMINOUS_BLAST2: "White Dwarf",
+    LUMINOUS_BLAST3: "Human",
   };  
   const PeacebringerSecondaryPowers = {
   LUMINOUS_AURA: "Luminous Aura",
@@ -617,8 +618,9 @@ const StalkerPrimaryPowers = {
 
   //Warshade Powers
   const WarshadePrimaryPowers = {
-  UMBRAL_BLAST: "Umbral Blast",
-  UMBRAL_BLAST2: "Umbral Blast",
+    LUMINOUS_BLAST: "Dark Nova",
+    LUMINOUS_BLAST2: "Black Dwarf",
+    LUMINOUS_BLAST3: "Human",
   };  
   const WarshadeSecondaryPowers = {
   UMBRAL_AURA: "Umbral Aura",

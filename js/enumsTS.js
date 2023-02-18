@@ -9,7 +9,7 @@ const Archetype = {
   DOMINATOR: "Dominator",
   MASTERMIND: "Mastermind",
   PEACEBRINGER: "Peacebringer",
-  SENTINEL: "Primalist",
+  PRIMALIST: "Primalist",
   SCRAPPER: "Scrapper",
   STALKER: "Stalker",
   TANKER: "Tanker",
@@ -359,8 +359,9 @@ const Archetype = {
 
   //Peacebringer Powers
   const PeacebringerPrimaryPowers = {
-  LUMINOUS_BLAST: "Luminous Blast",
-  LUMINOUS_BLAST2: "Luminous Blast",
+    LUMINOUS_BLAST: "Bright Nova",
+    LUMINOUS_BLAST2: "White Dwarf",
+    LUMINOUS_BLAST3: "Human",
   };  
   const PeacebringerSecondaryPowers = {
   LUMINOUS_AURA: "Luminous Aura",
@@ -421,39 +422,16 @@ const Archetype = {
   WEAPON_MASTERY: "Weapon Mastery",
   };
 
-  //Sentinel Powers
-  const SentinelPrimaryPowers = {
-  ARCHERY: "Archery",
-  ASSAULT_RIFLE: "Assault Rifle",
-  BEAM_RIFLE: "Beam Rifle",
-  DARK_BLAST: "Dark Blast",
-  DUAL_PISTOLS: "Dual Pistols",
-  ELECTRICAL_BLAST: "Electrical Blast",
-  ENERGY_BLAST: "Energy Blast",
-  FIRE_BLAST: "Fire Blast",
-  ICE_BLAST: "Ice Blast",
-  PSYCHIC_BLAST: "Psychic Blast",
-  RADIATION_BLAST: "Radiation Blast",
-  SEISMIC_BLAST: "Seismic Blast",
-  SONIC_BLAST: "Sonic Blast",
-  WATER_BLAST: "Water Blast"
+  //Primalist Powers
+  const PrimalistPrimaryPowers = {
+  ARCHERY: "Unknown",
+  ASSAULT_RIFLE: "Unknown"
   };        
-  const SentinelSecondaryPowers = {
-  BIO_ARMOR: "Bio Armor",
-  DARK_ARMOR: "Dark Armor",
-  ELECTRIC_ARMOR: "Electric Armor",
-  ENERGY_AURA: "Energy Aura",
-  FIERY_AURA: "Fiery Aura",
-  ICE_ARMOR: "Ice Armor",
-  INVULNERABILITY: "Invulnerability",
-  NINJITSU: "Ninjitsu",
-  RADIATION_ARMOR: "Radiation Armor",
-  REGENERATION: "Regeneration",
-  SUPER_REFLEXES: "Super Reflexes",
-  STONE_ARMOR: "Stone Armor",
-  WILLPOWER: "Willpower"
+  const PrimalistSecondaryPowers = {
+  BIO_ARMOR: "Unknown",
+  DARK_ARMOR: "Unknown"
   };        
-  const SentinelEpicPowers = {
+  const PrimalistEpicPowers = {
   DARK_MASTERY: "Dark Mastery",
   ELECTRICITY_MASTERY: "Electricity Mastery",
   FIRE_MASTERY: "Fire Mastery",
@@ -565,8 +543,9 @@ const StalkerPrimaryPowers = {
 
   //Warshade Powers
   const WarshadePrimaryPowers = {
-  UMBRAL_BLAST: "Umbral Blast",
-  UMBRAL_BLAST2: "Umbral Blast",
+    LUMINOUS_BLAST: "Dark Nova",
+    LUMINOUS_BLAST2: "Black Dwarf",
+    LUMINOUS_BLAST3: "Human",
   };  
   const WarshadeSecondaryPowers = {
   UMBRAL_AURA: "Umbral Aura",
@@ -588,8 +567,8 @@ const StalkerPrimaryPowers = {
     [Archetype.DOMINATOR]: [DominatorPrimaryPowers, DominatorSecondaryPowers, DominatorEpicPowers],
     [Archetype.MASTERMIND]: [MastermindPrimaryPowers, MastermindSecondaryPowers, MastermindEpicPowers],
     [Archetype.PEACEBRINGER]: [PeacebringerPrimaryPowers, PeacebringerSecondaryPowers, PeacebringerEpicPowers],
+    [Archetype.PRIMALIST]: [PrimalistPrimaryPowers, PrimalistSecondaryPowers, PrimalistEpicPowers],
     [Archetype.SCRAPPER]: [ScrapperPrimaryPowers, ScrapperSecondaryPowers, ScrapperEpicPowers],
-    [Archetype.SENTINEL]: [SentinelPrimaryPowers, SentinelSecondaryPowers, SentinelEpicPowers],
     [Archetype.STALKER]: [StalkerPrimaryPowers, StalkerSecondaryPowers, StalkerEpicPowers],
     [Archetype.TANKER]: [TankerPrimaryPowers, TankerSecondaryPowers, TankerEpicPowers],
     [Archetype.WARSHADE]: [WarshadePrimaryPowers, WarshadeSecondaryPowers, WarshadeEpicPowers]
